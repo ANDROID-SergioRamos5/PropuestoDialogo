@@ -6,4 +6,5 @@
     <string name="nombre">Nombre</string>
     <string name="contraseña">Contraseña</string>
     <string name="checkBox">Recordarme</string>
+    <string name="botonIniciar">INICIAR</string>
 </resources>
