@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">PropuestoDialogo</string>
     <string name="tV_parteA">Necesitas tener creada una cuenta para iniciar la aplicación</string>
+    <string name="botonCrear">CREAR CUENTA</string>
+    <string name="olvidarContraseña">¿Olvidaste tu contraseña?</string>
+    <string name="nombre">Nombre</string>
+    <string name="contraseña">Contraseña</string>
+    <string name="checkBox">Recordarme</string>
 </resources>

@@ -17,6 +17,26 @@
            android:layout_weight="0.6"
            android:background="@color/colorPrimaryDark">
 
+           <TextView
+               android:id="@+id/tV_arriba"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/tV_parteA"
+               android:textSize="20sp"
+               android:gravity="center_horizontal"
+               android:layout_margin="@dimen/margenDialogo"/>
+
+           <Button
+               android:id="@+id/crearCuenta"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_below="@id/tV_arriba"
+               android:text="@string/botonCrear"
+               android:layout_centerHorizontal="true"
+               android:padding="35dp"
+               android:layout_margin="@dimen/margenDialogo"
+               android:ems="@android:integer/config_longAnimTime"
+               android:background="@color/colorAccent"/>
        </RelativeLayout>
        <RelativeLayout
            android:id="@+id/parteAbajo"
@@ -24,6 +44,49 @@
            android:layout_height="match_parent"
            android:layout_weight="0.4">
 
+           <EditText
+               android:id="@+id/eT_nombre"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_centerHorizontal="true"
+               android:layout_margin="@dimen/margenDialogo"
+               android:ems="@android:integer/config_longAnimTime"
+               android:hint="@string/nombre"
+               android:padding="25dp"
+               android:inputType="textPersonName"/>
+           <EditText
+               android:id="@+id/eT_contraseña"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_below="@id/eT_nombre"
+               android:layout_centerHorizontal="true"
+               android:layout_marginLeft="25dp"
+               android:layout_marginRight="25dp"
+               android:layout_marginBottom="25dp"
+               android:ems="@android:integer/config_longAnimTime"
+               android:hint="@string/contraseña"
+               android:padding="25dp"
+               android:inputType="textPassword"/>
+
+           <CheckBox
+               android:id="@+id/checkBoxRecordar"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_below="@id/eT_contraseña"
+               android:hint="@string/checkBox"
+               android:textSize="20sp"
+               android:layout_marginStart="@dimen/margenDialogo"
+               android:textStyle="bold"/>
+
+           <TextView
+               android:id="@+id/tV_olvidadaContraseña"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_below="@id/checkBoxRecordar"
+               android:layout_centerInParent="true"
+               android:layout_alignParentEnd="true"
+               android:layout_margin="@dimen/margenDialogo"
+               android:text="@string/olvidarContraseña"/>
        </RelativeLayout>
    </LinearLayout>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
