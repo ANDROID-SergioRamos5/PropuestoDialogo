@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -24,8 +25,28 @@ public class MainActivity extends AppCompatActivity {
 
                 LayoutInflater inflater = MainActivity.this.getLayoutInflater();
 
-                builder.setView(inflater.inflate(R.layout.dialogo,null));
+                View v = inflater.inflate(R.layout.dialogo,null);
 
+                builder.setView(v);
+
+                Button crear = (Button) v.findViewById(R.id.crearCuenta);
+                Button iniciar = (Button) v.findViewById(R.id.iniciarSesion);
+
+                crear.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Toast.makeText(getApplicationContext(),"Boton crear cuenta", Toast.LENGTH_LONG).show();
+                    }
+                });
+
+                iniciar.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Toast.makeText(getApplicationContext(), "Boton iniciar sesion", Toast.LENGTH_LONG).show();
+                    }
+                });
+
+                builder.create();
                 builder.show();
             }
         });
