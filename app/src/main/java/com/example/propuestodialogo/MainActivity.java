@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
                 LayoutInflater inflater = MainActivity.this.getLayoutInflater();
 
                 View v = inflater.inflate(R.layout.dialogo,null);
-
+                //Cogemos la vista para trabajar dentro de ella.
                 builder.setView(v);
 
                 Button crear = (Button) v.findViewById(R.id.crearCuenta);
